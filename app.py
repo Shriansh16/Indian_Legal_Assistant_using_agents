@@ -100,9 +100,9 @@ def main():
                     user_proxy_auto = autogen.UserProxyAgent(
                         name="User_Proxy_Auto",
                         human_input_mode="NEVER",
-                        is_termination_msg=lambda x: x.get("content", "") and x.get("content", "").rstrip().endswith("TERMINATE"),
+                        is_termination_msg=lambda x: True,
                         code_execution_config={
-                            "last_n_messages": 3,
+                            "last_n_messages": 1,
                             "work_dir": "coding",
                             "use_docker": False,
                         },
