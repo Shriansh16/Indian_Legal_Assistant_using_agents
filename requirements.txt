@@ -1,0 +1,13 @@
+autogen
+streamlit
+python-dotenv
+numpy
+pandas
+matplotlib
+yfinance
+requests
+beautifulsoup4
+lxml
+cloudscraper
+ag2[openai]
+streamlit_chat
